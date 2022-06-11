@@ -29,8 +29,7 @@ const load=(coun)=>{
     let country_language=document.getElementById("language");
     let country_borders=document.getElementById("borders");
     
-	//https://restcountries.com/v3.1/all 
-    fetch('https://shreyasmohite.github.io/Countries-Api/country.json').then((data)=>{
+    fetch('https://raw.githubusercontent.com/Geeks-Vegeta/countries_information/main/country.json').then((data)=>{
         return data.json()
     }).then((act)=>{        
         for(var i=0;i<=act.length;i++){
